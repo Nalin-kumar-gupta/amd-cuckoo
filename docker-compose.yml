@@ -9,7 +9,7 @@ services:
     volumes:
       - ./cuckoo-tmp/:/tmp/cuckoo-tmp/
       - ./storage/:/cuckoo/storage/
-      - ./virtualbox.conf:/cuckoo/conf/virtualbox.conf 
+      - ./conf:/cuckoo/conf
     networks:
       - cuckoo
     env_file:
